@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CampusRopeIScrollComponent } from './campus-rope-iscroll.component';
+import { InfiniteScrollingComponent } from './infinite-scrolling.component';
 
-describe('CampusRopeIScrollComponent', () => {
-  let component: CampusRopeIScrollComponent;
-  let fixture: ComponentFixture<CampusRopeIScrollComponent>;
+describe('InfiniteScrollingComponent', () => {
+  let component: InfiniteScrollingComponent;
+  let fixture: ComponentFixture<InfiniteScrollingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CampusRopeIScrollComponent ]
+      declarations: [ InfiniteScrollingComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CampusRopeIScrollComponent);
+    fixture = TestBed.createComponent(InfiniteScrollingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

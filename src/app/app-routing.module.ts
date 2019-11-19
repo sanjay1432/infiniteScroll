@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
 
-import {CampusRopeIScrollComponent} from './campus-rope-iscroll/campus-rope-iscroll.component'
-const routes: Routes = [{ path: 'infiScroll',  component: CampusRopeIScrollComponent },];
+  { path: 'infiScroll', loadChildren: () => import('./infinite-scrolling/infinite-scrolling.module').then(m => m.InfiniteScrollingModule) },];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
